@@ -1,7 +1,7 @@
 Id	Description	Qty	Unit	Designators
-1	Cable, CAN, 4 x AWG 28	0.4	m	Cable_Main_1, Cable_Main_2
-2	Connector, Hirose DF13, female, 4 pins, GY	3		CAN1, CAN2, CAN3
-3	Connector, SPC-01T	12		
+1	Cable, CAN, 4 x AWG 28	0.2	m	Cable_Main
+2	Connector, Hirose DF13, female, 4 pins, GY	3		CAN_Brake, CAN_INS/GNSS, CAN_SensorHub
+3	Connector, SPC-01T	8		
 4	Wire, CAN, AWG 28, BK	0.6	m	Cable_Stub_1, Cable_Stub_2, Cable_Stub_3
 5	Wire, CAN, AWG 28, BU	0.6	m	Cable_Stub_1, Cable_Stub_2, Cable_Stub_3
 6	Wire, CAN, AWG 28, RD	0.6	m	Cable_Stub_1, Cable_Stub_2, Cable_Stub_3

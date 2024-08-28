@@ -1,0 +1,56 @@
+templates:
+  - &template_con
+    type: Hirose DF13
+    subtype: female
+    pincount: 4
+    pinlabels: [GND, CAN_L, CAN_H, Vcc]
+    color: GY
+  - &template_wire
+    # category: bundle
+    wirecount: 4
+    gauge: AWG 28
+    length: 0.2 # length in m
+    # colors: [BK,RD,WH,YE,GN]
+    type: CAN
+  - &template_wire_stub
+    category: bundle
+    wirecount: 4
+    gauge: AWG 28
+    length: 0.2 # length in m
+    colors: [BK,WH,BU,RD]
+    type: CAN
+
+connectors:
+  CAN_INS/GNSS:
+    <<: *template_con
+  CAN_Brake:
+    <<: *template_con
+  CAN_SensorHub:
+    <<: *template_con
+  F:
+    style: simple
+    type: SPC-01T
+
+cables:
+  Cable_Main:
+    <<: *template_wire
+  Cable_Stub_1:
+    <<: *template_wire_stub
+  Cable_Stub_2:
+    <<: *template_wire_stub
+  Cable_Stub_3:
+    <<: *template_wire_stub
+
+connections:
+  -
+    - CAN_SensorHub: [1-4]
+    - Cable_Stub_1: [1-4]
+    - [F.F1, F.F2, F.F3, F.F4] 
+    - Cable_Main: [1-4]
+    - [F.F5, F.F6, F.F7, F.F8]
+    - Cable_Stub_2: [1-4]
+    - CAN_Brake: [1-4]
+  -
+    - [F.F5, F.F6, F.F7, F.F8]
+    - Cable_Stub_3: [1-4]
+    - CAN_INS/GNSS: [1-4]

@@ -31,7 +31,10 @@ connectors:
     color: WH
   F:
     style: simple
-    type: SPC-01T
+    type: JST SPC-01T
+  D:
+    style: simple
+    type: Dummy
 
 cables:
   Cable_Hub:
@@ -71,35 +74,38 @@ cables:
     type: Analog
 
 connections:
+# センサハブ側コネクタ
   -
     - Analog1: [1,2,3]
     - Cable_Hub: [1,2,3]
-    - [F.F1, F.F2, F.F3]  # generate new instances of F and assign designators
-  -
-    - [F.F1, F.F2, F.F3]  # generate new instances of F and assign designators
-    - Cable_Rudder: [1,2,3]
-    - Rudder: [1,3,2]
+    - [F.F1, F.F2, F.F3]
   -
     - Analog2: [3]
     - Cable_Hub: [4]
-    - [F.F4]  # generate new instances of F and assign designators
+    - [D.D4]
     - Cable_Intermediate: [3]
   -
     - Analog2: [6]
     - Cable_Hub: [5]
-    - [F.F5]
+    - [D.D5]
     - Cable_Intermediate: [4]
+# ラダー側コネクタ
+  -
+    - [F.F1, F.F2, F.F3]
+    - Cable_Rudder: [1,2,3]
+    - Rudder: [1,3,2]
+# 中間ケーブル
   -
     - [F.F1, F.F2]
     - Cable_Intermediate: [1,2]
   -
     - Cable_Intermediate: [1,2,3,4]
-    - [F.F6, F.F7, F.F8, F.F9]
+    - [F.F6, F.F7, D.D8, D.D9]
   -
-    - [F.F6, F.F7, F.F8]
+    - [F.F6, F.F7, D.D8]
     - Cable_Elevetor: [1,2,3]
     - Elevetor: [1,3,2]
   -
-    - [F.F6, F.F7, F.F9]
+    - [F.F6, F.F7, D.D9]
     - Cable_Aileron: [1,2,3]
     - Aileron: [1,3,2]

@@ -12,57 +12,45 @@ templates:
     length: 0.2 # length in m
     # colors: [BK,RD,WH,YE,GN]
     type: CAN
+  - &template_wire_stub
+    category: bundle
+    wirecount: 4
+    gauge: AWG 28
+    length: 0.2 # length in m
+    colors: [BK,WH,BU,RD]
+    type: CAN
 
 connectors:
-  CAN1:
+  CAN_INS/GNSS:
     <<: *template_con
-  CAN2:
+  CAN_Pitot:
     <<: *template_con
-  CAN3:
+  CAN_nRF52840:
     <<: *template_con
   F:
     style: simple
     type: SPC-01T
 
 cables:
-  Cable_Main_1:
-    <<: *template_wire
-  Cable_Main_2:
+  Cable_Main:
     <<: *template_wire
   Cable_Stub_1:
-    category: bundle
-    wirecount: 4
-    gauge: AWG 28
-    length: 0.2 # length in m
-    colors: [BK,WH,BU,RD]
-    type: CAN
+    <<: *template_wire_stub
   Cable_Stub_2:
-    category: bundle
-    wirecount: 4
-    gauge: AWG 28
-    length: 0.2 # length in m
-    colors: [BK,WH,BU,RD]
-    type: CAN
+    <<: *template_wire_stub
   Cable_Stub_3:
-    category: bundle
-    wirecount: 4
-    gauge: AWG 28
-    length: 0.2 # length in m
-    colors: [BK,WH,BU,RD]
-    type: CAN
+    <<: *template_wire_stub
 
 connections:
   -
-    - CAN1: [1-4]
+    - CAN_Pitot: [1-4]
     - Cable_Stub_1: [1-4]
     - [F.F1, F.F2, F.F3, F.F4] 
-    - Cable_Main_1: [1-4]
-    - [F.F5, F.F6, F.F7, F.F8]    
-    - Cable_Main_2: [1-4]
-    - [F.F9, F.F10, F.F11, F.F12]
+    - Cable_Main: [1-4]
+    - [F.F5, F.F6, F.F7, F.F8]
     - Cable_Stub_2: [1-4]
-    - CAN3: [1-4]
+    - CAN_nRF52840: [1-4]
   -
     - [F.F5, F.F6, F.F7, F.F8]
     - Cable_Stub_3: [1-4]
-    - CAN2: [1-4]
+    - CAN_INS/GNSS: [1-4]
