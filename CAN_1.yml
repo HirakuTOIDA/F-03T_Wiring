@@ -1,0 +1,68 @@
+templates:
+  - &template_con
+    type: Hirose DF13
+    subtype: female
+    pincount: 4
+    pinlabels: [GND, CAN_L, CAN_H, Vcc]
+    color: GY
+  - &template_wire
+    # category: bundle
+    wirecount: 4
+    gauge: AWG 28
+    length: 0.2 # length in m
+    # colors: [BK,RD,WH,YE,GN]
+    type: CAN
+
+connectors:
+  CAN1:
+    <<: *template_con
+  CAN2:
+    <<: *template_con
+  CAN3:
+    <<: *template_con
+  F:
+    style: simple
+    type: SPC-01T
+
+cables:
+  Cable_Main_1:
+    <<: *template_wire
+  Cable_Main_2:
+    <<: *template_wire
+  Cable_Stub_1:
+    category: bundle
+    wirecount: 4
+    gauge: AWG 28
+    length: 0.2 # length in m
+    colors: [BK,WH,BU,RD]
+    type: CAN
+  Cable_Stub_2:
+    category: bundle
+    wirecount: 4
+    gauge: AWG 28
+    length: 0.2 # length in m
+    colors: [BK,WH,BU,RD]
+    type: CAN
+  Cable_Stub_3:
+    category: bundle
+    wirecount: 4
+    gauge: AWG 28
+    length: 0.2 # length in m
+    colors: [BK,WH,BU,RD]
+    type: CAN
+
+connections:
+  -
+    - CAN1: [1-4]
+    - Cable_Stub_1: [1-4]
+    - [F.F1, F.F2, F.F3, F.F4] 
+    - Cable_Main_1: [1-4]
+    - [F.F5, F.F6, F.F7, F.F8]    
+    - Cable_Main_2: [1-4]
+    - [F.F9, F.F10, F.F11, F.F12]
+    - Cable_Stub_2: [1-4]
+    - CAN3: [1-4]
+  -
+    - [F.F5, F.F6, F.F7, F.F8]
+    - Cable_Stub_3: [1-4]
+    - CAN2: [1-4]

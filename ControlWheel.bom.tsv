@@ -1,0 +1,10 @@
+Id	Description	Qty	Unit	Designators
+1	Connector, Dupont, female, 3 pins, BK	1		Analog1
+2	Connector, Dupont, female, 6 pins, BK	1		Analog2
+3	Connector, JST PH, female, 3 pins, WH	3		Aileron, Elevetor, Rudder
+4	Connector, SPC-01T	9		
+5	Wire, Analog, AWG 28, BK	1	m	Cable_Aileron, Cable_Elevetor, Cable_Hub, Cable_Intermediate, Cable_Rudder
+6	Wire, Analog, AWG 28, GN	0.6	m	Cable_Aileron, Cable_Hub, Cable_Intermediate
+7	Wire, Analog, AWG 28, RD	1	m	Cable_Aileron, Cable_Elevetor, Cable_Hub, Cable_Intermediate, Cable_Rudder
+8	Wire, Analog, AWG 28, WH	0.4	m	Cable_Hub, Cable_Rudder
+9	Wire, Analog, AWG 28, YE	0.6	m	Cable_Elevetor, Cable_Hub, Cable_Intermediate
