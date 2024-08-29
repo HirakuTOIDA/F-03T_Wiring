@@ -1,3 +1,5 @@
 # F-03T_Wiring
 ## Cadence
-![Test Image 1](Cadence.png)
+![Cadence](Cadence.png)
+## Control Wheel
+![Control Wheel](ControlWheel.png)
