@@ -1,9 +1,9 @@
 # F-03T Wiring
 ## Sensor Hub
-### Cadence
-![Cadence](Cadence.png)
 ### Control Wheel
 ![Control Wheel](ControlWheel.png)
+### Cadence
+![Cadence](Cadence.png)
 ### Sonar
 ![Sonar](Sonar.png)
 ## CAN
