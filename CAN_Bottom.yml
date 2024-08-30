@@ -43,10 +43,13 @@ templates:
 connectors:
   X1:
     <<: *template_con
+    notes: to sensor hub board
   X2:
     <<: *template_con
+    notes: to INS/GNSS board
   X3:
     <<: *template_con
+    notes: to nRF52840 board
   F:
     style: simple
     manufacturer: JST

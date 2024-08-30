@@ -1,56 +1,83 @@
+options:
+  mini_bom_mode: false
+  
 templates:
   - &template_con
     type: Hirose DF13
     subtype: female
     pincount: 4
-    pinlabels: [GND, CAN_L, CAN_H, Vcc]
+    pinlabels: [CAN_H, Vcc, CAN_L, GND]
     color: GY
+    manufacturer: Hirose
+    mpn: DF13-4S-1.25C
+    additional_components:
+      - type: Crimp
+        subtype: Hirose DF13, 26-30 AWG, Gold
+        qty_multiplier: populated
+        manufacturer: Hirose
+        mpn: DF13-3032SCFA(04)
+    image:
+      src: resources/DF13-4S-1.25C.jpg # https://www.digikey.jp/ja/products/detail/hirose-electric-co-ltd/DF13-4S-1-25C/241750
+      height: 100
+
   - &template_wire
-    # category: bundle
-    wirecount: 4
+    shield: true
+    wirecount: 3
     gauge: AWG 28
-    length: 0.2 # length in m
-    # colors: [BK,RD,WH,YE,GN]
-    type: CAN
+    length: 0.2 # @todo
+    colors: [BK,RD,WH]
+    manufacturer: Kyowa Harmonet
+    mpn: KWT-SW
+
   - &template_wire_stub
     category: bundle
     wirecount: 4
     gauge: AWG 28
-    length: 0.2 # length in m
-    colors: [BK,WH,BU,RD]
-    type: CAN
+    length: 0.1524 # length in m
+    colors: [GY,RD,WH,BK]
+    manufacturer: Hirose
+    mpn: [H4BBG-10112-G8,H4BBG-10112-R8,H4BBG-10112-W8,H4BBG-10112-B8]
+    supplier: Digikey
+    spn: [H4BBG-10112-G8-ND,H4BBG-10112-R8-ND,H4BBG-10112-W8-ND,H4BBG-10112-B8-ND]
 
 connectors:
-  CAN_INS/GNSS:
+  X1:
     <<: *template_con
-  CAN_Pitot:
+    notes: to pitot tube
+  X2:
     <<: *template_con
-  CAN_nRF52840:
+    notes: to INS/GNSS board
+  X3:
     <<: *template_con
+    notes: to brake by wire board
   F:
     style: simple
-    type: SPC-01T
+    manufacturer: JST
+    mpn: SPC-01T
+  S:
+    style: simple
+    type: Soldering
 
 cables:
-  Cable_Main:
+  W2:
     <<: *template_wire
-  Cable_Stub_1:
+  W1:
     <<: *template_wire_stub
-  Cable_Stub_2:
+  W3:
     <<: *template_wire_stub
-  Cable_Stub_3:
+  W4:
     <<: *template_wire_stub
 
 connections:
   -
-    - CAN_Pitot: [1-4]
-    - Cable_Stub_1: [1-4]
-    - [F.F1, F.F2, F.F3, F.F4] 
-    - Cable_Main: [1-4]
+    - X1: [1-4]
+    - W1: [1-4]
+    - [S.S1, S.S2, S.S3, S.S4] 
+    - W2: [1,2,3,s]
     - [F.F5, F.F6, F.F7, F.F8]
-    - Cable_Stub_2: [1-4]
-    - CAN_nRF52840: [1-4]
+    - W3: [1-4]
+    - X2: [1-4]
   -
     - [F.F5, F.F6, F.F7, F.F8]
-    - Cable_Stub_3: [1-4]
-    - CAN_INS/GNSS: [1-4]
+    - W4: [1-4]
+    - X3: [1-4]

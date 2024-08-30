@@ -1,8 +1,10 @@
-Id	Description	Qty	Unit	Designators
-1	Cable, CAN, 4 x AWG 28	0.2	m	Cable_Main
-2	Connector, Hirose DF13, female, 4 pins, GY	3		CAN_INS/GNSS, CAN_Pitot, CAN_nRF52840
-3	Connector, SPC-01T	8		
-4	Wire, CAN, AWG 28, BK	0.6	m	Cable_Stub_1, Cable_Stub_2, Cable_Stub_3
-5	Wire, CAN, AWG 28, BU	0.6	m	Cable_Stub_1, Cable_Stub_2, Cable_Stub_3
-6	Wire, CAN, AWG 28, RD	0.6	m	Cable_Stub_1, Cable_Stub_2, Cable_Stub_3
-7	Wire, CAN, AWG 28, WH	0.6	m	Cable_Stub_1, Cable_Stub_2, Cable_Stub_3
+Id	Description	Qty	Unit	Designators	Manufacturer	MPN	Supplier	SPN
+1	Cable, 3 x AWG 28 shielded	0.2	m	W2	Kyowa Harmonet	KWT-SW		
+2	Connector	4			JST	SPC-01T		
+3	Connector, Hirose DF13, female, 4 pins, GY	3		X1, X2, X3	Hirose	DF13-4S-1.25C		
+4	Connector, Soldering	4						
+5	Crimp, Hirose DF13, 26-30 AWG, Gold	12		X1, X2, X3	Hirose	DF13-3032SCFA(04)		
+6	Wire, AWG 28, BK	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-B8	Digikey	H4BBG-10112-B8-ND
+7	Wire, AWG 28, GY	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-G8	Digikey	H4BBG-10112-G8-ND
+8	Wire, AWG 28, RD	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-R8	Digikey	H4BBG-10112-R8-ND
+9	Wire, AWG 28, WH	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-W8	Digikey	H4BBG-10112-W8-ND

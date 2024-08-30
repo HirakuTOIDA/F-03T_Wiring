@@ -55,12 +55,12 @@
 <text text-anchor="start" x="367" y="-263.3" font-family="arial" font-size="14.00">Hirose: H4BBG&#45;10102&#45;B8</text>
 <polygon fill="none" stroke="black" points="537,-255.5 537,-278.5 741,-278.5 741,-255.5 537,-255.5"/>
 <text text-anchor="start" x="541" y="-263.3" font-family="arial" font-size="14.00">Digikey: H4BBG&#45;10102&#45;B8&#45;ND</text>
-<polygon fill="none" stroke="black" points="363,-232.5 363,-255.5 469,-255.5 469,-232.5 363,-232.5"/>
-<text text-anchor="start" x="408" y="-240.3" font-family="arial" font-size="14.00">4x</text>
-<polygon fill="none" stroke="black" points="469,-232.5 469,-255.5 615,-255.5 615,-232.5 469,-232.5"/>
-<text text-anchor="start" x="514" y="-240.3" font-family="arial" font-size="14.00">AWG 28</text>
-<polygon fill="none" stroke="black" points="615,-232.5 615,-255.5 741,-255.5 741,-232.5 615,-232.5"/>
-<text text-anchor="start" x="659.5" y="-240.3" font-family="arial" font-size="14.00">0.1 m</text>
+<polygon fill="none" stroke="black" points="363,-232.5 363,-255.5 461,-255.5 461,-232.5 363,-232.5"/>
+<text text-anchor="start" x="404" y="-240.3" font-family="arial" font-size="14.00">4x</text>
+<polygon fill="none" stroke="black" points="461,-232.5 461,-255.5 599,-255.5 599,-232.5 461,-232.5"/>
+<text text-anchor="start" x="502" y="-240.3" font-family="arial" font-size="14.00">AWG 28</text>
+<polygon fill="none" stroke="black" points="599,-232.5 599,-255.5 741,-255.5 741,-232.5 599,-232.5"/>
+<text text-anchor="start" x="639.5" y="-240.3" font-family="arial" font-size="14.00">0.0508 m</text>
 <text text-anchor="start" x="429" y="-219.3" font-family="arial" font-size="14.00"> </text>
 <text text-anchor="start" x="390" y="-200.3" font-family="arial" font-size="14.00">X1:1:CAN_H</text>
 <text text-anchor="start" x="525.5" y="-200.3" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;BK &#160;&#160;&#160;</text>

@@ -18,7 +18,7 @@ templates:
     category: bundle
     wirecount: 4
     gauge: AWG 28
-    length: 0.1 # @todo
+    length: 0.0508
     colors: [BK,BK,BK,BK]
     manufacturer: Hirose
     mpn: H4BBG-10102-B8
