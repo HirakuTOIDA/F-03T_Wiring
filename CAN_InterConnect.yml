@@ -1,31 +1,42 @@
+options:
+  mini_bom_mode: false
+
 templates:
-  - &template_con
+  - &template_con_df13
     type: Hirose DF13
     subtype: female
     pincount: 4
-    pinlabels: [GND, CAN_L, CAN_H, Vcc]
+    pinlabels: [CAN_H, Vcc, CAN_L, GND]
     color: GY
+    manufacturer: Hirose
+    mpn: DF13-4S-1.25C
+    image:
+      src: resources/DF13-4S-1.25C.jpg # https://www.digikey.jp/ja/products/detail/hirose-electric-co-ltd/DF13-4S-1-25C/241750
+      height: 100
+
   - &template_wire
     category: bundle
     wirecount: 4
     gauge: AWG 28
-    length: 0.2 # length in m
+    length: 0.1 # @todo
     colors: [BK,BK,BK,BK]
-    type: CAN
-
+    manufacturer: Hirose
+    mpn: H4BBG-10102-B8
+    supplier: Digikey
+    spn: H4BBG-10102-B8-ND
 connectors:
-  CAN_1:
-    <<: *template_con
-  CAN_2:
-    <<: *template_con
+  X1:
+    <<: *template_con_df13
+  X2:
+    <<: *template_con_df13
 
 cables:
-  Cable:
+  W1:
     <<: *template_wire
 
 connections:
   -
-    - CAN_1: [1-4]
-    - Cable: [1-4]
-    - CAN_2: [1-4]
+    - X1: [1-4]
+    - W1: [1-4]
+    - X2: [1-4]
 
