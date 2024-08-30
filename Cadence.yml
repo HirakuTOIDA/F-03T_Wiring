@@ -20,14 +20,15 @@ templates:
       src: resources/FutabaJ.png # https://futabausa.com/product/s3003oem-free/
       height: 100
     notes: to sensor hub board CH3
+
   - &template_wire
     wirecount: 3
     gauge: 0.1 mm2
     length: 0.1 # @todo
     colors: [BK,RD,WH]
-    # type: Digital
     manufacturer: Kyowa Harmonet
     mpn: KFC
+
   - &template_con_df13
     type: Hirose DF13
     subtype: female
