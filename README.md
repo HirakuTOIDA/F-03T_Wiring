@@ -13,3 +13,5 @@
 ![Top](CAN_Top.png)
 ### Interconnect
 ![Interconnect](CAN_InterConnect.png)
+## Brake by wire
+### Interface
