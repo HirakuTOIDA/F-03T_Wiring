@@ -1,18 +1,18 @@
 # F-03T Wiring
 ## Sensor Hub
-### Control Wheel
+### Control Wheel (1 pcs)
 ![Control Wheel](ControlWheel.png)
-### Cadence
+### Cadence (1 pcs)
 ![Cadence](Cadence.png)
-### Sonar
+### Sonar (1 pcs)
 ![Sonar](Sonar.png)
 ## CAN
-### Top
+### Top (1 pcs)
 ![CAN Top](CAN_Top.png)
-### Bottom
+### Bottom (1 pcs)
 ![CAN Bottom](CAN_Bottom.png)
-### Interconnect
+### Interconnect (2 pcs)
 ![CAN Interconnect](CAN_InterConnect.png)
 ## Brake by wire
-### Interface
+### Interface (1 pcs)
 ![Brake Interface](BrakeIF.png)
