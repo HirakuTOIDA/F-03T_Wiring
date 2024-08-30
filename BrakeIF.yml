@@ -32,7 +32,7 @@ templates:
     additional_components:
       - type: Crimp
         subtype: Futaba
-        qty_multiplier: populated
+        qty_multiplier: pincount
         manufacturer: AMASS
     image:
       src: resources/FutabaJ.png # https://futabausa.com/product/s3003oem-free/
@@ -50,6 +50,7 @@ templates:
 connectors:
   X3:
     <<: *template_con_df13
+    notes: to brake I/F distribution board
   X1:
     <<: *template_con_futaba
     pinlabels: [GND, Vcc, Signal (Pot)]

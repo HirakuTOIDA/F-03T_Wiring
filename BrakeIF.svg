@@ -115,7 +115,7 @@
 <!-- X3 -->
 <g id="node2" class="node">
 <title>X3</title>
-<polygon fill="#ffffff" stroke="black" points="1147,-682 867,-682 867,-352 1147,-352 1147,-682"/>
+<polygon fill="#ffffff" stroke="black" points="1147,-682.5 867,-682.5 867,-329.5 1147,-329.5 1147,-682.5"/>
 <polygon fill="none" stroke="black" points="867,-659 867,-682 1147,-682 1147,-659 867,-659"/>
 <text text-anchor="start" x="997.5" y="-666.8" font-family="arial" font-size="14.00">X3</text>
 <polygon fill="none" stroke="black" points="867,-636 867,-659 1147,-659 1147,-636 867,-636"/>
@@ -153,6 +153,8 @@
 <polygon fill="none" stroke="black" points="867,-352 867,-390 1147,-390 1147,-352 867,-352"/>
 <text text-anchor="start" x="871" y="-374.8" font-family="arial" font-size="14.00">4 x Crimp, Hirose DF13, 26&#45;30 AWG, Gold</text>
 <text text-anchor="start" x="871" y="-359.8" font-family="arial" font-size="14.00">Hirose: DF13&#45;3032SCFA(04)</text>
+<polygon fill="none" stroke="black" points="867,-329 867,-352 1147,-352 1147,-329 867,-329"/>
+<text text-anchor="start" x="914.5" y="-336.8" font-family="arial" font-size="14.00">to brake I/F distribution board</text>
 </g>
 <!-- X2 -->
 <g id="node3" class="node">
@@ -191,7 +193,7 @@
 <polygon fill="none" stroke="black" points="0.5,-61 0.5,-84 289.5,-84 289.5,-61 0.5,-61"/>
 <text text-anchor="start" x="72.5" y="-68.8" font-family="arial" font-size="14.00">Additional components</text>
 <polygon fill="none" stroke="black" points="0.5,-23 0.5,-61 289.5,-61 289.5,-23 0.5,-23"/>
-<text text-anchor="start" x="4.5" y="-45.8" font-family="arial" font-size="14.00">1 x Crimp, Futaba</text>
+<text text-anchor="start" x="4.5" y="-45.8" font-family="arial" font-size="14.00">3 x Crimp, Futaba</text>
 <text text-anchor="start" x="4.5" y="-30.8" font-family="arial" font-size="14.00">AMASS</text>
 <polygon fill="none" stroke="black" points="0.5,0 0.5,-23 289.5,-23 289.5,0 0.5,0"/>
 <text text-anchor="start" x="59" y="-7.8" font-family="arial" font-size="14.00">to brake by wire board CH2</text>
