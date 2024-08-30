@@ -1,4 +1,4 @@
-# F-03T_Wiring
+# F-03T Wiring
 ## Sensor Hub
 ### Cadence
 ![Cadence](Cadence.png)
@@ -7,11 +7,12 @@
 ### Sonar
 ![Sonar](Sonar.png)
 ## CAN
-### Bottom
-![Bottom](CAN_Bottom.png)
 ### Top
-![Top](CAN_Top.png)
+![CAN Top](CAN_Top.png)
+### Bottom
+![CAN Bottom](CAN_Bottom.png)
 ### Interconnect
-![Interconnect](CAN_InterConnect.png)
+![CAN Interconnect](CAN_InterConnect.png)
 ## Brake by wire
 ### Interface
+![Brake Interface](BrakeIF.png)
