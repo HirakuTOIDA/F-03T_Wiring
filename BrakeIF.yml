@@ -1,0 +1,44 @@
+templates:
+  - &template_con_df13
+    type: Hirose DF13
+    subtype: female
+    pincount: 4
+    pinlabels: [GND, Vcc, Signal (Pot), Signal (SW)]
+    color: GY
+  - &template_con_futaba
+    type: Futaba
+    subtype: female
+    pincount: 3
+    pinlabels: [GND, Vcc, Signal]
+    color: BK
+  - &template_wire
+    category: bundle
+    wirecount: 4
+    gauge: AWG 28
+    length: 0.2 # length in m
+    colors: [BK,RD,WH,BU]
+    type: Analog
+
+connectors:
+  BrakeDistributor:
+    <<: *template_con_df13
+  BrakeMainBoard_CH0:
+    <<: *template_con_futaba
+    pinlabels: [GND, Vcc, Signal (Pot)]
+  BrakeMainBoard_CH1:
+    <<: *template_con_futaba
+    pinlabels: [GND, Vcc, Signal (SW)]
+
+cables:
+  Cable:
+    <<: *template_wire
+
+connections:
+  -
+    - BrakeDistributor: [1-3]
+    - Cable: [1-3]
+    - BrakeMainBoard_CH0: [1-3]
+  -
+    - BrakeDistributor: [4]
+    - Cable: [4]
+    - BrakeMainBoard_CH1: [3]

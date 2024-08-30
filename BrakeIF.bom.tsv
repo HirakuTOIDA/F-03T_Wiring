@@ -1,0 +1,7 @@
+Id	Description	Qty	Unit	Designators
+1	Connector, Futaba, female, 3 pins, BK	2		BrakeMainBoard_CH0, BrakeMainBoard_CH1
+2	Connector, Hirose DF13, female, 4 pins, GY	1		BrakeDistributor
+3	Wire, Analog, AWG 28, BK	0.2	m	Cable
+4	Wire, Analog, AWG 28, BU	0.2	m	Cable
+5	Wire, Analog, AWG 28, RD	0.2	m	Cable
+6	Wire, Analog, AWG 28, WH	0.2	m	Cable
