@@ -1,4 +1,6 @@
-Id	Description	Qty	Unit	Designators
-1	Cable, Digital, 3 x AWG 28	0.2	m	Cable
-2	Connector, Futaba, female, 3 pins, BK	1		SensorHub
-3	Connector, Hirose DF13, female, 3 pins, GY	1		Cadence
+Id	Description	Qty	Unit	Designators	Manufacturer	MPN	Supplier	SPN
+1	Cable, 3 x 0.1 mm²	0.1	m	W1	Kyowa Harmonet	KFC		
+2	Connector, Futaba J (Keyed), female, 3 pins, BK	1		X1	AMASS		Little Bellanca	16769
+3	Connector, Hirose DF13, female, 3 pins, GY	1		X2	Hirose	DF13-3S-1.25C		
+4	Crimp, Futaba	3		X1	AMASS			
+5	Crimp, Hirose DF13, 26-30 AWG, Gold	3		X2	Hirose	DF13-3032SCFA(04)		

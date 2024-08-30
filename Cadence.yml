@@ -1,36 +1,64 @@
+options:
+  mini_bom_mode: false
+
 templates:
-  - &template_con_df13
-    type: Hirose DF13
-    subtype: female
-    pincount: 3
-    pinlabels: [GND, Vcc, Signal]
-    color: GY
   - &template_con_futaba
-    type: Futaba
+    type: Futaba J (Keyed)
     subtype: female
     pincount: 3
     pinlabels: [GND, Vcc, Signal]
     color: BK
+    manufacturer: AMASS
+    supplier: Little Bellanca
+    spn: 16769
+    additional_components:
+      - type: Crimp
+        subtype: Futaba
+        qty_multiplier: populated
+        manufacturer: AMASS
+    image:
+      src: resources/FutabaJ.png # https://futabausa.com/product/s3003oem-free/
+      height: 100
+    notes: to sensor hub board CH3
   - &template_wire
-    # category: bundle
     wirecount: 3
-    gauge: AWG 28
-    length: 0.2 # length in m
+    gauge: 0.1 mm2
+    length: 0.1 # @todo
     colors: [BK,RD,WH]
-    type: Digital
+    # type: Digital
+    manufacturer: Kyowa Harmonet
+    mpn: KFC
+  - &template_con_df13
+    type: Hirose DF13
+    subtype: female
+    pincount: 3
+    pinlabels: [Signal, Vcc, GND]
+    color: GY
+    manufacturer: Hirose
+    mpn: DF13-3S-1.25C
+    additional_components:
+      - type: Crimp
+        subtype: Hirose DF13, 26-30 AWG, Gold
+        qty_multiplier: populated
+        manufacturer: Hirose
+        mpn: DF13-3032SCFA(04)
+    image:
+      src: resources/DF13-3S-1.25C.jpg # https://www.digikey.jp/ja/products/detail/hirose-electric-co-ltd/DF13-3S-1-25C/241749
+      height: 100
+    notes: to cadence sensor
 
 connectors:
-  Cadence:
-    <<: *template_con_df13
-  SensorHub:
+  X1:
     <<: *template_con_futaba
+  X2:
+    <<: *template_con_df13
 
 cables:
-  Cable:
+  W1:
     <<: *template_wire
 
 connections:
   -
-    - Cadence: [1-3]
-    - Cable: [1-3]
-    - SensorHub: [1-3]
+    - X1: [1-3]
+    - W1: [1-3]
+    - X2: [3-1]
