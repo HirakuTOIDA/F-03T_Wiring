@@ -1,36 +1,67 @@
+options:
+  mini_bom_mode: false
+
 templates:
-  - &template_con_Dupont
-    type: Dupont
-    subtype: female
-    pincount: 6
-    pinlabels: [GND, Vcc, Signal, NC, NC, NC]
-    color: BK
   - &template_con_futaba
-    type: Futaba
+    type: Futaba J (Keyed)
     subtype: female
     pincount: 3
     pinlabels: [GND, Vcc, Signal]
     color: BK
+    manufacturer: AMASS
+    supplier: Little Bellanca
+    spn: 16769
+    additional_components:
+      - type: Crimp
+        subtype: Futaba
+        qty_multiplier: populated
+        manufacturer: AMASS
+    image:
+      src: resources/FutabaJ.png # https://futabausa.com/product/s3003oem-free/
+      height: 100
+    notes: to sensor hub board CH7
+  - &template_con_Dupont
+    type: Dupont
+    subtype: female
+    pincount: 7
+    pinlabels: [NC (Dummy contact inserted), NC (Dummy contact with pin inserted), NC (Dummy contact with pin inserted), NC (Dummy contact with pin inserted), Signal, Vcc, GND]
+    color: BK
+    manufacturer: Neltron
+    mpn: 2226A-07
+    supplier: Akizuki
+    spn: 112156
+    additional_components:
+      - type: Crimp
+        subtype: Dupont
+        qty_multiplier: pincount         
+        manufacturer: Neltron
+        mpn: 2226TG
+        supplier: Akizuki
+        spn: 112327
+    image:
+      src: resources/112156_trim.jpg # https://akizukidenshi.com/catalog/g/g112156/
+      height: 100
+    notes: to sonar
   - &template_wire
-    # category: bundle
     wirecount: 3
-    gauge: AWG 28
-    length: 0.2 # length in m
+    gauge: 0.1 mm2
+    length: 0.1 # @todo
     colors: [BK,RD,WH]
-    type: Digital
+    manufacturer: Kyowa Harmonet
+    mpn: KFC
 
 connectors:
-  Sonar:
-    <<: *template_con_Dupont
-  SensorHub:
+  X1:
     <<: *template_con_futaba
+  X2:
+    <<: *template_con_Dupont
 
 cables:
-  Cable:
+  W1:
     <<: *template_wire
 
 connections:
   -
-    - Sonar: [1-3]
-    - Cable: [1-3]
-    - SensorHub: [1-3]
+    - X1: [1-3]
+    - W1: [1-3]
+    - X2: [7-5]
