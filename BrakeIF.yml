@@ -6,7 +6,7 @@ templates:
     type: Hirose DF13
     subtype: female
     pincount: 4
-    pinlabels: [GND, Vcc, Signal, Signal]
+    pinlabels: [GND, Vcc, Signal (Pot), Signal (SW)]
     color: GY
     manufacturer: Hirose
     mpn: DF13-4S-1.25C
