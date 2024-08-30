@@ -1,4 +1,4 @@
-# F-03T_Wiring
+# F-03T Wiring
 ## Sensor Hub
 ### Cadence
 ![Cadence](Cadence.png)
