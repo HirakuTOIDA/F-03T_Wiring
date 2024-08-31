@@ -14,5 +14,7 @@
 ### Interconnect (2 pcs)
 ![CAN Interconnect](CAN_InterConnect.png)
 ## Brake by wire
+### Battery (1 pcs)
+![Brake Battery](BrakeBattery.png)
 ### Interface (1 pcs)
 ![Brake Interface](BrakeIF.png)
