@@ -14,6 +14,18 @@ templates:
       src: resources/PHR-3_trim.png # https://www.digikey.jp/ja/products/detail/jst-sales-america-inc/PHR-3/527357
       height: 100
 
+  - &template_con_ph_adapter
+    type: JST PH
+    subtype: male
+    pincount: 3
+    pinlabels: [Vcc, Balance, GND]
+    color: WH
+    manufacturer: JST
+    mpn: B3B-PH-TW-S
+    image:
+      src: resources/B3B-PH-TW-S(LF)(SN)_trim.png # https://www.digikey.jp/ja/products/detail/jst-sales-america-inc/B3B-PH-TW-S/2713717
+      height: 100
+
   - &template_con_futaba
     type: Futaba J (Keyed)
     subtype: female
@@ -45,18 +57,13 @@ connectors:
     notes: to barake by wire board CH5
   X2:
     <<: *template_con_ph
-    pinlabels: [Vcc, Balance, GND]
+    pinlabels: [GND, Balance, Vcc]
   X3:
-    type: JST PH
-    subtype: male
-    pincount: 3
+    <<: *template_con_ph_adapter
+    pinlabels: [GND, Balance, Vcc]
+  X4:
+    <<: *template_con_ph_adapter
     pinlabels: [Vcc, Balance, GND]
-    color: WH
-    manufacturer: JST
-    mpn: B3B-PH-TW-S
-    image:
-      src: resources/B3B-PH-TW-S(LF)(SN)_trim.png # https://www.digikey.jp/ja/products/detail/jst-sales-america-inc/B3B-PH-TW-S/2713717
-      height: 100
     notes: to battery
 
 cables:
@@ -70,6 +77,8 @@ connections:
   -
     - X1: [1,2]
     - W1: [1,2]
-    - X2: [3,1]
+    - X2: [1,3]
     - -->
-    - X3: [3,1]
+    - X3: [1,3]
+    - <-->
+    - X4: [3,1]

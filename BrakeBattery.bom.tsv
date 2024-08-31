@@ -1,6 +1,6 @@
 Id	Description	Qty	Unit	Designators	Manufacturer	MPN	Supplier	SPN
 1	Connector, Futaba J (Keyed), female, 3 pins, BK	1		X1	AMASS		Little Bellanca	16769
 2	Connector, JST PH, female, 3 pins, WH	1		X2	JST	PHR-3		
-3	Connector, JST PH, male, 3 pins, WH	1		X3	JST	B3B-PH-TW-S		
+3	Connector, JST PH, male, 3 pins, WH	2		X3, X4	JST	B3B-PH-TW-S		
 4	Crimp, Futaba	2		X1	AMASS			
 5	Wire, AWG 24, BK	0.305	m	W1	JST	ASPHSPH24K305		
