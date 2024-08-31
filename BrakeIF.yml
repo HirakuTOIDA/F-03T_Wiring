@@ -43,7 +43,7 @@ templates:
     wirecount: 4
     gauge: AWG 28
     length: 0.1 # @todo
-    colors: [BK,RD,WH,BU]
+    colors: [BK,RD,WH,GN]
     manufacturer: Kyowa Harmonet
     mpn: UL1429
 
