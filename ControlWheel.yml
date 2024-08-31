@@ -1,34 +1,68 @@
+options:
+  mini_bom_mode: false
+
+templates:
+  - &template_con_ph
+    type: JST PH
+    subtype: female
+    pincount: 3
+    pinlabels: [GND, Vcc, Signal]
+    color: WH
+    manufacturer: JST
+    mpn: PHR-3
+    additional_components:
+      - type: Crimp
+        subtype: JST PH, 24-30 AWG, Tin
+        qty_multiplier: populated
+        manufacturer: JST
+        mpn: SPH-002T-P0.5S
+    image:
+      src: resources/PHR-3.jpg # https://www.digikey.jp/ja/products/detail/jst-sales-america-inc/PHR-3/527357
+      height: 100
+
+  - &template_con_futaba
+    type: Futaba J (Keyed)
+    subtype: female
+    pincount: 3
+    pinlabels: [GND, Vcc, Signal]
+    color: BK
+    manufacturer: AMASS
+    supplier: Little Bellanca
+    spn: 16769
+    additional_components:
+      - type: Crimp
+        subtype: Futaba
+        qty_multiplier: pincount
+        manufacturer: AMASS
+    image:
+      src: resources/FutabaJ.png # https://futabausa.com/product/s3003oem-free/
+      height: 100
+
+  - &template_wire
+    category: bundle
+    gauge: AWG 28
+    manufacturer: Kyowa Harmonet
+    mpn: UL1429
+
 connectors:
-  Analog1:
-    type: Dupont
-    subtype: female
-    pincount: 3
+  X1:
+    <<: *template_con_futaba
     pinlabels: [GND, Vcc,Rudder]
-    color: BK
-  Analog2:
-    type: Dupont
-    subtype: female
-    pincount: 6
-    pinlabels: [GND, Vcc, Elevetor, GND, Vcc,Aileron]
-    color: BK
-  Rudder:
-    type: JST PH
-    subtype: female
-    pincount: 3
+  X2:
+    <<: *template_con_futaba
+    pinlabels: [GND, Vcc, Elevetor]
+  X3:
+    <<: *template_con_futaba
+    pinlabels: [GND, Vcc,Aileron]
+  X4:
+    <<: *template_con_ph
     pinlabels: [GND, Rudder, Vcc]
-    color: WH
-  Elevetor:
-    type: JST PH
-    subtype: female
-    pincount: 3
+  X5:
+    <<: *template_con_ph
     pinlabels: [GND, Elevetor, Vcc]
-    color: WH
-  Aileron:
-    type: JST PH
-    subtype: female
-    pincount: 3
+  X6:
+    <<: *template_con_ph
     pinlabels: [GND, Aileron, Vcc]
-    color: WH
   F:
     style: simple
     type: JST SPC-01T
@@ -37,75 +71,65 @@ connectors:
     type: Dummy
 
 cables:
-  Cable_Hub:
-    category: bundle
+  W1:
+    <<: *template_wire
     wirecount: 5
-    gauge: AWG 28
     length: 0.2 # length in m
     colors: [BK,RD,WH,YE,GN]
-    type: Analog
-  Cable_Intermediate:
-    category: bundle
+  W2:
+    <<: *template_wire
     wirecount: 4
-    gauge: AWG 28
     length: 0.2 # length in m
     colors: [BK,RD,YE,GN]
-    type: Analog
-  Cable_Rudder:
-    category: bundle
+  W3:
+    <<: *template_wire
     wirecount: 3
-    gauge: AWG 28
     length: 0.2 # length in m
     colors: [BK,RD,WH]
-    type: Analog
-  Cable_Elevetor:
-    category: bundle
+  W4:
+    <<: *template_wire
     wirecount: 3
-    gauge: AWG 28
     length: 0.2 # length in m
     colors: [BK,RD,YE]
-    type: Analog
-  Cable_Aileron:
-    category: bundle
+  W5:
+    <<: *template_wire
     wirecount: 3
-    gauge: AWG 28
     length: 0.2 # length in m
     colors: [BK,RD,GN]
-    type: Analog
 
 connections:
 # センサハブ側コネクタ
   -
-    - Analog1: [1,2,3]
-    - Cable_Hub: [1,2,3]
+    - X1: [1,2,3]
+    - W1: [1,2,3]
     - [F.F1, F.F2, F.F3]
   -
-    - Analog2: [3]
-    - Cable_Hub: [4]
+    - X2: [3]
+    - W1: [4]
     - [D.D4]
-    - Cable_Intermediate: [3]
+    - W2: [3]
   -
-    - Analog2: [6]
-    - Cable_Hub: [5]
+    - X3: [3]
+    - W1: [5]
     - [D.D5]
-    - Cable_Intermediate: [4]
+    - W2: [4]
 # ラダー側コネクタ
   -
     - [F.F1, F.F2, F.F3]
-    - Cable_Rudder: [1,2,3]
-    - Rudder: [1,3,2]
+    - W3: [1,2,3]
+    - X4: [1,3,2]
 # 中間ケーブル
   -
     - [F.F1, F.F2]
-    - Cable_Intermediate: [1,2]
+    - W2: [1,2]
   -
-    - Cable_Intermediate: [1,2,3,4]
+    - W2: [1,2,3,4]
     - [F.F6, F.F7, D.D8, D.D9]
   -
     - [F.F6, F.F7, D.D8]
-    - Cable_Elevetor: [1,2,3]
-    - Elevetor: [1,3,2]
+    - W4: [1,2,3]
+    - X5: [1,3,2]
   -
     - [F.F6, F.F7, D.D9]
-    - Cable_Aileron: [1,2,3]
-    - Aileron: [1,3,2]
+    - W5: [1,2,3]
+    - X6: [1,3,2]
