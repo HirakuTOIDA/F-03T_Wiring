@@ -10,12 +10,12 @@ templates:
     color: GY
     manufacturer: Hirose
     mpn: DF13-4S-1.25C
-    additional_components:
-      - type: Crimp
-        subtype: Hirose DF13, 26-30 AWG, Gold
-        qty_multiplier: populated
-        manufacturer: Hirose
-        mpn: DF13-3032SCFA(04)
+    # additional_components:
+    #   - type: Crimp
+    #     subtype: Hirose DF13, 26-30 AWG, Gold
+    #     qty_multiplier: populated
+    #     manufacturer: Hirose
+    #     mpn: DF13-3032SCFA(04)
     image:
       src: resources/DF13-4S-1.25C.jpg # https://www.digikey.jp/ja/products/detail/hirose-electric-co-ltd/DF13-4S-1-25C/241750
       height: 100
@@ -34,7 +34,7 @@ templates:
     wirecount: 4
     gauge: AWG 28
     length: 0.1524 # length in m
-    colors: [GY,RD,WH,BK]
+    colors: [GN,RD,WH,BK]
     manufacturer: Hirose
     mpn: [H4BBG-10112-G8,H4BBG-10112-R8,H4BBG-10112-W8,H4BBG-10112-B8]
     supplier: Digikey

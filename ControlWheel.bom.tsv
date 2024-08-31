@@ -1,8 +1,8 @@
 Id	Description	Qty	Unit	Designators	Manufacturer	MPN	Supplier	SPN
-1	Connector, Dummy	4						
-2	Connector, Futaba J (Keyed), female, 3 pins, BK	3		X1, X2, X3	AMASS		Little Bellanca	16769
-3	Connector, JST PH, female, 3 pins, WH	3		X4, X5, X6	JST	PHR-3		
-4	Connector, JST SPC-01T	5						
+1	Connector	5			JST	SPC-01T		
+2	Connector, Dummy	4						
+3	Connector, Futaba J (Keyed), female, 3 pins, BK	3		X1, X2, X3	AMASS		Little Bellanca	16769
+4	Connector, JST PH, female, 3 pins, WH	3		X4, X5, X6	JST	PHR-3		
 5	Crimp, Futaba	9		X1, X2, X3	AMASS			
 6	Crimp, JST PH, 24-30 AWG, Tin	9		X4, X5, X6	JST	SPH-002T-P0.5S		
 7	Wire, AWG 28, BK	1	m	W1, W2, W3, W4, W5	Kyowa Harmonet	UL1429		

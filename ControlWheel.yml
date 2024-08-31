@@ -48,24 +48,31 @@ connectors:
   X1:
     <<: *template_con_futaba
     pinlabels: [GND, Vcc,Rudder]
+    notes: to sensor hub board CH0
   X2:
     <<: *template_con_futaba
     pinlabels: [GND, Vcc, Elevetor]
+    notes: to sensor hub board CH1
   X3:
     <<: *template_con_futaba
     pinlabels: [GND, Vcc,Aileron]
+    notes: to sensor hub board CH2
   X4:
     <<: *template_con_ph
     pinlabels: [GND, Rudder, Vcc]
+    notes: to rudder
   X5:
     <<: *template_con_ph
     pinlabels: [GND, Elevetor, Vcc]
+    notes: to elevetor
   X6:
     <<: *template_con_ph
     pinlabels: [GND, Aileron, Vcc]
+    notes: to aileron
   F:
     style: simple
-    type: JST SPC-01T
+    manufacturer: JST
+    mpn: SPC-01T
   D:
     style: simple
     type: Dummy
