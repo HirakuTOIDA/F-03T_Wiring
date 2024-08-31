@@ -1,0 +1,75 @@
+options:
+  mini_bom_mode: false
+
+templates:
+  - &template_con_ph
+    type: JST PH
+    subtype: female
+    pincount: 3
+    pinlabels: [GND, Vcc, Signal]
+    color: WH
+    manufacturer: JST
+    mpn: PHR-3
+    image:
+      src: resources/PHR-3_trim.png # https://www.digikey.jp/ja/products/detail/jst-sales-america-inc/PHR-3/527357
+      height: 100
+
+  - &template_con_futaba
+    type: Futaba J (Keyed)
+    subtype: female
+    pincount: 3
+    pinlabels: [GND, Vcc, Signal]
+    color: BK
+    manufacturer: AMASS
+    supplier: Little Bellanca
+    spn: 16769
+    additional_components:
+      - type: Crimp
+        subtype: Futaba
+        qty_multiplier: populated
+        manufacturer: AMASS
+    image:
+      src: resources/FutabaJ_trim.png # https://futabausa.com/product/s3003oem-free/
+      height: 100
+
+  - &template_wire
+    category: bundle
+    gauge: AWG 24
+    manufacturer: JST
+    mpn: ASPHSPH24K305
+
+connectors:
+  X1:
+    <<: *template_con_futaba
+    pinlabels: [GND, Vcc,NC]
+    notes: to barake by wire board CH5
+  X2:
+    <<: *template_con_ph
+    pinlabels: [Vcc, Balance, GND]
+  X3:
+    type: JST PH
+    subtype: male
+    pincount: 3
+    pinlabels: [Vcc, Balance, GND]
+    color: WH
+    manufacturer: JST
+    mpn: B3B-PH-TW-S
+    image:
+      src: resources/B3B-PH-TW-S(LF)(SN)_trim.png # https://www.digikey.jp/ja/products/detail/jst-sales-america-inc/B3B-PH-TW-S/2713717
+      height: 100
+    notes: to battery
+
+cables:
+  W1:
+    <<: *template_wire
+    wirecount: 2
+    length: 0.1524 # length in m
+    colors: [BK,BK]
+
+connections:
+  -
+    - X1: [1,2]
+    - W1: [1,2]
+    - X2: [3,1]
+    - -->
+    - X3: [3,1]
