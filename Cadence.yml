@@ -17,7 +17,7 @@ templates:
         qty_multiplier: populated
         manufacturer: AMASS
     image:
-      src: resources/FutabaJ.png # https://futabausa.com/product/s3003oem-free/
+      src: resources/FutabaJ_trim.png # https://futabausa.com/product/s3003oem-free/
       height: 100
     notes: to sensor hub board CH3
 
@@ -44,7 +44,7 @@ templates:
         manufacturer: Hirose
         mpn: DF13-3032SCFA(04)
     image:
-      src: resources/DF13-3S-1.25C.jpg # https://www.digikey.jp/ja/products/detail/hirose-electric-co-ltd/DF13-3S-1-25C/241749
+      src: resources/DF13-3S-1.25C_trim.png # https://www.digikey.jp/ja/products/detail/hirose-electric-co-ltd/DF13-3S-1-25C/241749
       height: 100
     notes: to cadence sensor
 

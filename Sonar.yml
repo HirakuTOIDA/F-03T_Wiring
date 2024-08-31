@@ -17,7 +17,7 @@ templates:
         qty_multiplier: populated
         manufacturer: AMASS
     image:
-      src: resources/FutabaJ.png # https://futabausa.com/product/s3003oem-free/
+      src: resources/FutabaJ_trim.png # https://futabausa.com/product/s3003oem-free/
       height: 100
     notes: to sensor hub board CH7
   - &template_con_Dupont
@@ -33,13 +33,13 @@ templates:
     additional_components:
       - type: Crimp
         subtype: Dupont
-        qty_multiplier: pincount         
+        qty_multiplier: pincount
         manufacturer: Neltron
         mpn: 2226TG
         supplier: Akizuki
         spn: 112327
     image:
-      src: resources/112156_trim.jpg # https://akizukidenshi.com/catalog/g/g112156/
+      src: resources/112156_trim.png # https://akizukidenshi.com/catalog/g/g112156/
       height: 100
     notes: to sonar
   - &template_wire

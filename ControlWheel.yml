@@ -17,7 +17,7 @@ templates:
         manufacturer: JST
         mpn: SPH-002T-P0.5S
     image:
-      src: resources/PHR-3.jpg # https://www.digikey.jp/ja/products/detail/jst-sales-america-inc/PHR-3/527357
+      src: resources/PHR-3_trim.png # https://www.digikey.jp/ja/products/detail/jst-sales-america-inc/PHR-3/527357
       height: 100
 
   - &template_con_futaba
@@ -35,7 +35,7 @@ templates:
         qty_multiplier: pincount
         manufacturer: AMASS
     image:
-      src: resources/FutabaJ.png # https://futabausa.com/product/s3003oem-free/
+      src: resources/FutabaJ_trim.png # https://futabausa.com/product/s3003oem-free/
       height: 100
 
   - &template_wire

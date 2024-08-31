@@ -11,7 +11,7 @@ templates:
     manufacturer: Hirose
     mpn: DF13-4S-1.25C
     image:
-      src: resources/DF13-4S-1.25C.jpg # https://www.digikey.jp/ja/products/detail/hirose-electric-co-ltd/DF13-4S-1-25C/241750
+      src: resources/DF13-4S-1.25C_trim.png # https://www.digikey.jp/ja/products/detail/hirose-electric-co-ltd/DF13-4S-1-25C/241750
       height: 100
 
   - &template_wire
