@@ -16,6 +16,8 @@ templates:
         subtype: Futaba
         qty_multiplier: populated
         manufacturer: AMASS
+      - type: Shrink tube + label
+        subtype: SUMITUBE-A-2.0x0.2-CLR
     image:
       src: resources/FutabaJ_trim.png # https://futabausa.com/product/s3003oem-free/
       height: 100
@@ -38,6 +40,8 @@ templates:
         mpn: 2226TG
         supplier: Akizuki
         spn: 112327
+      - type: Shrink tube + label
+        subtype: SUMITUBE-A-2.0x0.2-CLR
     image:
       src: resources/112156_trim.png # https://akizukidenshi.com/catalog/g/g112156/
       height: 100
