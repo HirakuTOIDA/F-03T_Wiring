@@ -4,5 +4,6 @@ Id	Description	Qty	Unit	Designators	Manufacturer	MPN	Supplier	SPN
 3	Connector, JST PH, male, 3 pins, WH	2		X3, X4	JST	B3B-PH-TW-S		
 4	Crimp, Futaba	2		X1	AMASS			
 5	Shrink tube + label, SUMITUBE-C-1.5x0.2-CLR	2		X1, X2				
-6	Shrink tube, SUMITUBE-A-12x0.3-CLR	1		X2				
-7	Wire, AWG 24, BK	0.305	m	W1	JST	ASPHSPH24K305		
+6	Shrink tube, G-APEX G5-2.0 RED	1		W1				
+7	Shrink tube, SUMITUBE-A-12x0.3-CLR	1		X2				
+8	Wire, AWG 24, BK	0.305	m	W1	JST	ASPHSPH24K305		

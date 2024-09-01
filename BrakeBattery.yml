@@ -79,6 +79,9 @@ cables:
     wirecount: 2
     length: 0.1524 # length in m
     colors: [BK,BK]
+    additional_components:
+      - type: Shrink tube
+        subtype: G-APEX G5-2.0 RED
 
 connections:
   -
