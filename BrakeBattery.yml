@@ -64,7 +64,7 @@ connectors:
       - type: Shrink tube + label
         subtype: SUMITUBE-C-1.5x0.2-CLR
       - type: Shrink tube
-        subtype: SUMITUBE-C-12x0.3-CLR
+        subtype: SUMITUBE-A-12x0.3-CLR
   X3:
     <<: *template_con_ph_adapter
     pinlabels: [GND, Balance, Vcc]
