@@ -35,11 +35,6 @@ templates:
     manufacturer: AMASS
     supplier: Little Bellanca
     spn: 16769
-    additional_components:
-      - type: Crimp
-        subtype: Futaba
-        qty_multiplier: populated
-        manufacturer: AMASS
     image:
       src: resources/FutabaJ_trim.png # https://futabausa.com/product/s3003oem-free/
       height: 100
@@ -53,11 +48,23 @@ templates:
 connectors:
   X1:
     <<: *template_con_futaba
-    pinlabels: [GND, Vcc,NC]
+    pinlabels: [GND, Vcc, NC (Dummy contact with pin inserted)]
+    additional_components:
+      - type: Crimp
+        subtype: Futaba
+        qty_multiplier: populated
+        manufacturer: AMASS
+      - type: Shrink tube + label
+        subtype: SUMITUBE-C-1.5x0.2-CLR
     notes: to barake by wire board CH5
   X2:
     <<: *template_con_ph
     pinlabels: [GND, Balance, Vcc]
+    additional_components:
+      - type: Shrink tube + label
+        subtype: SUMITUBE-C-1.5x0.2-CLR
+      - type: Shrink tube
+        subtype: SUMITUBE-C-12x0.3-CLR
   X3:
     <<: *template_con_ph_adapter
     pinlabels: [GND, Balance, Vcc]

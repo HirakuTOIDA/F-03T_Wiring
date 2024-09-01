@@ -16,6 +16,8 @@ templates:
         subtype: Futaba
         qty_multiplier: populated
         manufacturer: AMASS
+      - type: Shrink tube + label
+        subtype: SUMITUBE-C-1.5x0.2-CLR
     image:
       src: resources/FutabaJ_trim.png # https://futabausa.com/product/s3003oem-free/
       height: 100
@@ -43,6 +45,8 @@ templates:
         qty_multiplier: populated
         manufacturer: Hirose
         mpn: DF13-3032SCFA(04)
+      - type: Shrink tube + label
+        subtype: SUMITUBE-C-1.5x0.2-CLR
     image:
       src: resources/DF13-3S-1.25C_trim.png # https://www.digikey.jp/ja/products/detail/hirose-electric-co-ltd/DF13-3S-1-25C/241749
       height: 100

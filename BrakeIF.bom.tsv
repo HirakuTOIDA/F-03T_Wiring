@@ -1,9 +1,11 @@
 Id	Description	Qty	Unit	Designators	Manufacturer	MPN	Supplier	SPN
 1	Connector, Futaba J (Keyed), female, 3 pins, BK	2		X1, X2	AMASS		Little Bellanca	16769
 2	Connector, Hirose DF13, female, 4 pins, GY	1		X3	Hirose	DF13-4S-1.25C		
-3	Crimp, Futaba	6		X1, X2	AMASS			
+3	Crimp, Futaba	4		X1, X2	AMASS			
 4	Crimp, Hirose DF13, 26-30 AWG, Gold	4		X3	Hirose	DF13-3032SCFA(04)		
-5	Wire, AWG 28, BK	0.1	m	W1	Kyowa Harmonet	UL1429		
-6	Wire, AWG 28, GN	0.1	m	W1	Kyowa Harmonet	UL1429		
-7	Wire, AWG 28, RD	0.1	m	W1	Kyowa Harmonet	UL1429		
-8	Wire, AWG 28, WH	0.1	m	W1	Kyowa Harmonet	UL1429		
+5	Shrink tube + label, SUMITUBE-A-2.0x0.2-CLR	1		X3				
+6	Shrink tube + label, SUMITUBE-C-1.5x0.2-CLR	2		X1, X2				
+7	Wire, AWG 28, BK	0.1	m	W1	Kyowa Harmonet	UL1429		
+8	Wire, AWG 28, GN	0.1	m	W1	Kyowa Harmonet	UL1429		
+9	Wire, AWG 28, RD	0.1	m	W1	Kyowa Harmonet	UL1429		
+10	Wire, AWG 28, WH	0.1	m	W1	Kyowa Harmonet	UL1429		

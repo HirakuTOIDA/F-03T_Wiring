@@ -16,6 +16,8 @@ templates:
         qty_multiplier: populated
         manufacturer: JST
         mpn: SPH-002T-P0.5S
+      - type: Shrink tube + label
+        subtype: SUMITUBE-C-1.5x0.2-CLR
     image:
       src: resources/PHR-3_trim.png # https://www.digikey.jp/ja/products/detail/jst-sales-america-inc/PHR-3/527357
       height: 100
@@ -32,8 +34,10 @@ templates:
     additional_components:
       - type: Crimp
         subtype: Futaba
-        qty_multiplier: pincount
+        qty_multiplier: populated
         manufacturer: AMASS
+      - type: Shrink tube + label
+        subtype: SUMITUBE-C-1.5x0.2-CLR
     image:
       src: resources/FutabaJ_trim.png # https://futabausa.com/product/s3003oem-free/
       height: 100
@@ -73,6 +77,7 @@ connectors:
     style: simple
     manufacturer: JST
     mpn: SPC-01T
+    notes: SUMITUBE-C-1.5x0.2-CLR
   D:
     style: simple
     type: Dummy

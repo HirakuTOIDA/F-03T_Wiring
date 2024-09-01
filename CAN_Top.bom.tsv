@@ -3,7 +3,8 @@ Id	Description	Qty	Unit	Designators	Manufacturer	MPN	Supplier	SPN
 2	Connector	4			JST	SPC-01T		
 3	Connector, Hirose DF13, female, 4 pins, GY	3		X1, X2, X3	Hirose	DF13-4S-1.25C		
 4	Connector, Soldering	4						
-5	Wire, AWG 28, BK	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-B8	Digikey	H4BBG-10112-B8-ND
-6	Wire, AWG 28, GN	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-G8	Digikey	H4BBG-10112-G8-ND
-7	Wire, AWG 28, RD	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-R8	Digikey	H4BBG-10112-R8-ND
-8	Wire, AWG 28, WH	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-W8	Digikey	H4BBG-10112-W8-ND
+5	Shrink tube + label, SUMITUBE-A-2.0x0.2-CLR	3		X1, X2, X3				
+6	Wire, AWG 28, BK	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-B8	Digikey	H4BBG-10112-B8-ND
+7	Wire, AWG 28, GN	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-G8	Digikey	H4BBG-10112-G8-ND
+8	Wire, AWG 28, RD	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-R8	Digikey	H4BBG-10112-R8-ND
+9	Wire, AWG 28, WH	0.457	m	W1, W3, W4	Hirose	H4BBG-10112-W8	Digikey	H4BBG-10112-W8-ND
