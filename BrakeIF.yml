@@ -17,7 +17,7 @@ templates:
         manufacturer: Hirose
         mpn: DF13-3032SCFA(04)
       - type: Shrink tube + label
-        subtype: SUMITUBE-A-2.0x0.2-CLR
+        subtype: SUMITUBE-C-2.0x0.2-CLR
     image:
       src: resources/DF13-4S-1.25C_trim.png # https://www.digikey.jp/ja/products/detail/hirose-electric-co-ltd/DF13-4S-1-25C/241750
       height: 100

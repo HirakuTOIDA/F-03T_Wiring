@@ -4,4 +4,5 @@ Id	Description	Qty	Unit	Designators	Manufacturer	MPN	Supplier	SPN
 3	Connector, Futaba J (Keyed), female, 3 pins, BK	1		X1	AMASS		Little Bellanca	16769
 4	Crimp, Dupont	7		X2	Neltron	2226TG	Akizuki	112327
 5	Crimp, Futaba	3		X1	AMASS			
-6	Shrink tube + label, SUMITUBE-A-2.0x0.2-CLR	2		X1, X2				
+6	Shrink tube + label, SUMITUBE-A-2.0x0.2-CLR	1		X2				
+7	Shrink tube + label, SUMITUBE-C-2.0x0.2-CLR	1		X1				
