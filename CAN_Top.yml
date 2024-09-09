@@ -18,13 +18,12 @@ templates:
       height: 100
 
   - &template_wire
+    type: USB
     shield: true
-    wirecount: 3
-    gauge: AWG 28
-    length: 0.2 # @todo
-    colors: [BK,RD,WH]
-    manufacturer: Kyowa Harmonet
-    mpn: KWT-SW
+    wirecount: 4
+    length: 2.5 # @todo
+    colors: [GN,RD,WH,BK]
+    manufacturer: Sanwa Supply
 
   - &template_wire_stub
     category: bundle
@@ -71,10 +70,14 @@ connections:
     - X1: [1-4]
     - W1: [1-4]
     - [S.S1, S.S2, S.S3, S.S4] 
-    - W2: [1,2,3,s]
+    - W2: [1,2,3,4]
     - [F.F5, F.F6, F.F7, F.F8]
     - W3: [1-4]
     - X2: [1-4]
+  - # connect the shielding to a pin
+    - [S.S4]
+    - W2: s
+    - [F.F8]
   -
     - [F.F5, F.F6, F.F7, F.F8]
     - W4: [1-4]
